@@ -1,12 +1,12 @@
 query Find_Datasources_LUID {
 	    tableauSites {
     		name
-        publishedDatasources(filter: { name: "Superstore"}) {
+        publishedDatasources(filter: { name: "RLB Data Dictionary Temp"}) {
             name
       			projectName
             description
             luid
-                uri
+            uri
             owner {
             username
             name
@@ -19,4 +19,15 @@ query Find_Datasources_LUID {
             
         }
 		}
+}
+
+query GetAllDatasources {
+  tableauSites {
+    name
+    publishedDatasources {
+      name
+      luid
+      projectName
+    }
+  }
 }
