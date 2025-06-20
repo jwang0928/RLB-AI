@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-EXCEL_FILE = "C:/Users/227457/Downloads/RLB Data Dictionary Temp.xlsx"
+EXCEL_FILE = "RLB Data Dictionary Temp.xlsx"
 df = pd.read_excel(EXCEL_FILE)
 
 def smart_lookup_metric_details(metric_query):
